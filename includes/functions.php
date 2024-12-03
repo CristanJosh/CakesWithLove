@@ -15,14 +15,14 @@ function sendOrderNotification($name, $email, $cake_type, $quantity, $message) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';  // Set SMTP server (for Gmail)
         $mail->SMTPAuth = true;
-        $mail->Username = 'cristanjoshnuguid13@gmail.com';  // Your Gmail address
-        $mail->Password = 'kvwe bjub dudq snqz';   // Your Gmail password (use App Password for Gmail)
+        $mail->Username = '';  // Your Gmail address
+        $mail->Password = '';   // Your Gmail password (use App Password for Gmail)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // Use TLS encryption
         $mail->Port = 587;  // Gmail's SMTP port
         
         // Sender and recipient
         $mail->setFrom('no-reply@cakeshop.com', 'Cake Shop');
-        $mail->addAddress('cristanjoshnuguid13@gmail.com');  // Seller's email
+        $mail->addAddress('');  // Seller's email
         
         // Email content
         $mail->isHTML(true);
