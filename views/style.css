@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root {
-    --main-color: #443;
+    --main-color: #ffb0b9;
     --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
     --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
     --border: .2rem solid var(--main-color);
@@ -34,7 +34,7 @@ section {
 .heading {
     font-size: 9rem;
     text-transform: uppercase;
-    color: transparent;
+    color: #572267;
     -webkit-text-stroke: .05rem var(--main-color);
     letter-spacing: .2rem;
     text-align: center;
@@ -48,7 +48,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    color: var(--main-color);
+    color: #572267;
     font-size: 3rem;
 }
 
@@ -67,6 +67,31 @@ section {
 .btn:hover {
     border-radius: var(--border-radius-hover);
     border: var(--border-hover);
+    
+}
+
+
+.btn-header {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    color: var(--main-color);
+    background: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    background-color: #572267;
+    color: #fcd5a0 !important;
+    font-weight: bold;
+    max-width: 200px;
+    text-align: center;
+}
+
+.btn-header:hover {
+    border-radius: var(--border-radius-hover);
+    border: var(--border-hover);
+    background-color: #1d1646;
 }
 
 /* HEADER */
@@ -80,10 +105,28 @@ section {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background: #fff;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background: #e74274 !important; /* Dark Purple Background */
+    color: #ffffff; /* Set text color to white for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
     padding: 2rem 9%;
 }
+
+.header .navbar a {
+    color: #572267 !important; /* Pale Yellow for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header .navbar a:hover {
+    color: #ffffff; /* White text on hover for better visibility */
+}
+
+.header .logo {
+    color: #572267 !important; /* Light Pink for the logo text */
+    font-weight: bold;
+}
+
+
 
 .header .logo {
     color: var(--main-color);
@@ -112,13 +155,95 @@ section {
 }
 
 /* HOME */
-
 .home {
-    min-height: 100vh;
-    padding-top: 12rem;
-    background: url(../image/bg-copy.jpg) repeat;
-    background-position: center;
+    min-height: 100vh; /* Full viewport height */
+    padding-top: 12rem; /* Optional padding for layout adjustment */
+    background: url(../image/bg-darkpurple.png) no-repeat center center; /* Background settings */
     background-size: cover;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+/* Apply cursive font to the unique div */
+.unique-div {
+    font-family: "Dancing Script", cursive; /* Set cursive font */
+}
+
+/* Unique Styled Form */
+/* Unique Styled Form - Taller Version */
+.styled-form {
+    background:  #e74274; /* Keeps the same background */
+    border: 3px solid #ffffff; /* Maintain the elegant border */
+    padding: 3rem 3rem; /* Add vertical space with increased padding */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Keep shadow for depth */
+    transition: all 0.4s ease-out; /* Smooth transition for hover effects */
+    position: relative; /* For inner element positioning */
+    max-width: 100%; /* Width remains the same */
+    margin: auto; /* Center the form */
+    min-height: 450px; /* Ensure the form is taller */
+    display: flex; /* For better vertical alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+}
+/* Hover Effect */
+.styled-form:hover {
+    transform: scale(1.05); /* Slightly enlarge the form */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
+    border-color: #ffffff; /* Change border color to a softer shade */
+    padding: 2.5rem 3.5rem; /* Add extra padding on hover */
+}
+
+/* Title Styling */
+.styled-form h3 {
+    font-size: 3rem; /* Keep title size bold and noticeable */
+    color: #572267 !important; /* Pale yellow for the title */
+    text-transform: uppercase; /* Dramatic uppercase effect */
+    font-weight: bold;
+    margin-bottom: 2rem; /* Maintain spacing from other elements */
+    text-align: center; /* Center-align the title */
+    letter-spacing: 3px; /* Stylish letter spacing */
+    position: relative;
+    z-index: 1;
+}
+
+/* Paragraph Styling */
+.styled-form p {
+    font-size: 1.6rem; /* Slightly larger font size for better readability */
+    line-height: 2; /* Increase line spacing for a clean, tall layout */
+    color: #ffffff; /* Keep text color white for contrast */
+    margin-bottom: 3rem; /* Add more spacing below the paragraph */
+    text-align: center;
+}
+
+/* Button Styling */
+.styled-form .btn {
+    align-self: center; /* Center the button horizontally */
+    background: #fcd5a0; /* Matching pale yellow button */
+    color: #333; /* Dark text for contrast */
+    padding: 1rem 1.5rem; /* Increased padding for a taller button */
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.styled-form .btn:hover {
+    background: #fbbf85; /* Slightly darker yellow on hover */
+}
+
+
+/* Animation for the title words */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .home .row {
@@ -139,7 +264,7 @@ section {
 }
 
 .home .row .image img {
-    height: 50rem;
+    height: 30rem;
     animation: float 4s linear infinite;
 }
 
@@ -163,9 +288,9 @@ section {
 
 .home .row .content p {
     font-size: 2rem; 
-    color: var(--main-color);
     line-height: 1.8;
     padding: 1rem 0;
+    color: #572267;
 }
 
 
@@ -173,6 +298,8 @@ section {
     text-align: center;
     padding: 3rem 0;
 }
+
+
 
 .home .image-slider img {
     height: 9rem;
@@ -186,7 +313,13 @@ section {
 }
 
 /* ABOUT */
-
+.about {
+    min-height: 100vh;
+    padding-top: 12rem;
+    background: url(../image/bg-darkpurple.png) repeat;
+    background-position: center;
+    background-size: cover;
+}
 .about .row {
     display: flex;
     align-items: center;
@@ -199,8 +332,7 @@ section {
 }
 
 .about .row .image img {
-    width: 100%;
-    animation: aboutImage 4s linear infinite;
+    width: 70%;
 }
 
 @keyframes aboutImage {
@@ -258,11 +390,21 @@ section {
     padding-top: 1rem;
     color: var(--main-color);
 }
+.section-divider {
+    border: 0;
+    height: 10px; /* Skinny line */
+    background: #ef678f; /* Use a complementary color */
+    margin: 0; /* Remove default spacing */
+    width: 100%; /* Optional: adjust width to not span the full screen */
+    margin: 0 auto; /* Center the line horizontally */
+}
 
 /* MENU */
 
 .menu {
-    background: url(../image/menu-bg.jpg) repeat;
+    min-height: 100vh;
+    padding-top: 12rem;
+    background: url(../image/bg-darkpurple.png) repeat;
     background-position: center;
     background-size: cover;
 }
@@ -283,6 +425,8 @@ section {
     align-items: center;
     gap: 1.5rem;
     margin-left: 6rem;
+    background: #e74274;
+    color:#572267 !important;
 }
 
 .menu .box-container .box:hover {
@@ -297,26 +441,59 @@ section {
 
 .menu .box-container .box .content h3 {
     font-size: 2.2rem;
-    color: var(--main-color);
+
     line-height: 1.8;
 }
 
 .menu .box-container .box .content p {
     font-size: 1.6rem;
-    color: var(--main-color);
     line-height: 1.8;
     padding: 1rem 0;
 }
 
 .menu .box-container .box .content span {
     font-size: 2rem;
-    color: var(--main-color);
+    font-weight: bold;
     line-height: 1.8;
 }
 
+/* General text color for the menu section */
+.menu {
+    color: #572267; /* Apply the desired text color */
+}
+
+/* Specific styles for headings */
+.menu h2,
+.menu h3 {
+    color: #572267; /* Ensure headings also use the same color */
+}
+
+/* Additional customization for text elements */
+.menu p {
+    color: #572267; /* Apply color to paragraph text */
+}
+
+/* Ensure span elements retain the color */
+.menu span {
+    color: #572267;
+}
+
+/* Optional: Hover effects for links or spans (if any) */
+.menu a:hover,
+.menu span:hover {
+    color: #6b2352; /* Slightly darker purple for hover */
+}
 
 
 /* REVIEW */
+.review{
+    min-height: 100vh;
+    padding-top: 12rem;
+    background: url(../image/bg-darkpurple.png) repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 
 .review .review-slider {
     padding: 7rem 0;
@@ -329,6 +506,7 @@ section {
     position: relative;
     z-index: 0;
     padding: 2rem;
+    background: #e74274; 
 }
 
 .review .review-slider .box .fa-quote-left {
@@ -370,25 +548,25 @@ section {
 
 .review .review-slider .box .stars i {
     font-size: 1.7rem;
-    color: var(--main-color);
+    color: #572267;
 }
 
 .review .review-slider .box p {
     font-size: 1.6rem;
-    color: var(--main-color);
+    color: #572267;
     padding: 1rem 0;
     line-height: 1.8;
 }
 
 .review .review-slider .box h3 {
     font-size: 2.2rem;
-    color: var(--main-color);
+    color: #572267;
     line-height: 1.8;
 }
 
 .review .review-slider .box span {
     font-size: 1.5rem;
-    color: var(--main-color);
+    color: #572267;
 }
 
 .swiper-pagination-bullet {
@@ -398,13 +576,35 @@ section {
 }
 
 .swiper-pagination-bullet-active {
-    background: var(--main-color);
+    color: #572267;
 }
 
 /* BOOK */
+select.box {
+    background-color: #572267; /* Dark Purple */
+    color: #ffffff; /* White text for contrast */
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem;
+    appearance: none; /* Removes default dropdown arrow styling */
+    cursor: pointer;
+}
+
+select.box:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(87, 34, 103, 0.5); /* Adds a subtle focus effect */
+}
+
+select.box option {
+    background-color: #572267; /* Matches the dropdown background */
+    color: #ffffff; /* White text */
+}
 
 .book {
-    background: url(../image/book-bg.jpg);
+    min-height: 100vh;
+    padding-top: 12rem;
+    background:  url(../image/bg-darkpurple.png) repeat;
     background-position: center;
     background-size: cover;
 }
@@ -412,10 +612,23 @@ section {
 .book form {
     margin: 0 auto 2rem auto;
     max-width: 60rem;
-    border-radius: var(--border-radius-hover);
     padding: 3rem;
-    border: var(--border);
+    background-color: #e74274; /* Dark purple color */
+    color: #fff; /* White text color for contrast */
+    border: 3px solid #fcd5a0; /* Pale yellow border */
+    transition: all 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
+
+.book form:hover {
+    border-radius: 4px; /* Rounded shape on hover */
+    transform: scale(1.02); /* Slightly enlarges the container */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    border-color: #fcd5a0; /* Keep the pale yellow border on hover */
+    border-style: dashed; /* Make the border lines broken on hover */
+}
+
+
 
 .book form .box {
     width: 100%;
@@ -424,37 +637,42 @@ section {
     font-size: 1.6rem;
     background: none;
     text-transform: none;
-    color: var(--main-color);
+    color: #572267;
     border: var(--border);
     margin: .7rem 0;
 }
 
 .book form .box:focus {
-    border: var(--border-hover);
+    color: #572267;
 }
 
 .book form textarea {
     height: 15rem;
     resize: none;
 }
+.footer{
+    background-color: #e74274;
+}
 
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     gap: 1.5rem;
+    background-color: #e74274;
+    padding: 1rem;
 }
 
 .footer .box-container .box h3 {
     font-size: 2.5rem;
     padding: 1rem 0;
-    color: var(--main-color);
+    color: #572267;
 }
 
 .footer .box-container .box a {
     display: block;
     font-size: 1.5rem;
     padding: 1rem 0;
-    color: var(--main-color);
+    color: #572267;
 }
 
 .footer .box-container .box a i {
@@ -470,12 +688,11 @@ section {
     font-size: 2rem;
     padding: 2rem 1rem;
     margin-top: 1rem;
-    color: var(--main-color);
+    color: #572267;
+    background-color: #e74274;
 }
 
-.footer .credit span {
-    border-bottom: var(--border-hover);
-}
+
 
 .box {
     width: 100%;
@@ -490,17 +707,18 @@ section {
 /* Button styling */
 .btn {
     padding: 1rem 2rem;
-    background-color: #f07d31;
+    background-color: #ef678f !important;
     border: none;
     color: white;
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
     text-transform: uppercase;
+    color: #572267 !important;
 }
 
 .btn:hover {
-    background-color: #d4661c;
+    background-color: #e74274 !important;
 }
 
 

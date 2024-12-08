@@ -18,23 +18,31 @@
             <a href="#review">Reviews</a>
             <a href="#about">About</a>
         </nav>
-        <a href="#book" class="btn">Order Now</a>
+        <a href="#book" class="btn-header">Order Now</a>
     </header>
 
     <!-- Home Section -->
     <section id="home" class="home">
         <div class="row">
-            <div class="content">
-                <h3>Delight in Every Bite</h3>
-                <p>Experience the joy of freshly baked vegan cakes, crafted with love and care. Let us add sweetness to your moments.</p>
-                <a href="#menu" class="btn">Explore Menu</a>
-            </div>
+        <div class="content">
+            <form class="styled-form">
+                <div class="unique-div">
+                    <h3 class="title">Delight in Every Bite</h3>
+                    <p>Experience the joy of freshly baked vegan cakes, crafted with love and care. Let us add sweetness to your moments.</p>
+                </div>
+                <a href="#menu" class="btn-header">Explore Menu</a>
+            </form>
+        </div>
+
             <div class="image">
                 <img src="../image/cake-display.png" alt="Delicious Cake">
             </div>
         </div>
     </section>
 
+
+
+    <hr class="section-divider">
 
     <!-- Menu Section -->
     <section id="menu" class="menu">
@@ -72,29 +80,35 @@
                     <span>₱500+</span>
                 </div>
             </div>
-            
-            
         </div>
     </section>
 
+    <hr class="section-divider">
+
        <!-- BOOK -->
        <section class="book" id="book">
-        <h1 class="heading">cake <span>Place your Order</span></h1>
+            <h1 class="heading">cake <span>Place your Order</span></h1>
 
-        <form action="order.php" method="POST">
-    <input type="text" placeholder="Your Name" name="name" class="box" required>
-            <input type="email" placeholder="Your Email" name="email" class="box" required>
-            <select name="cake_type" id="cake_type" class="box" required>
-                <option value="Chocolate">Chocolate</option>
-                <option value="Vanilla">Vanilla</option>
-                <option value="Strawberry">Strawberry</option>
-            </select>
-            <input type="number" placeholder="Quantity" name="quantity" class="box" required>
-            <textarea name="message" placeholder="Special Message" class="box" rows="4"></textarea>
+            <form action="order.php" method="POST">
+                <input type="text" placeholder="Your Name" name="name" class="box" required>
+                <input type="email" placeholder="Your Email" name="email" class="box" required>
 
-        <button type="submit" name="submit" class="btn">Place Order</button>
-        </form>
-    </section>
+                <select name="cake_type" id="cake_type" class="box" required>
+                    <option value="" disabled selected>Flavors</option> <!-- Placeholder -->
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Vanilla">Vanilla</option>
+                    <option value="Strawberry">Strawberry</option>
+                </select>
+
+                <input type="number" placeholder="Quantity" name="quantity" class="box" required>
+                <textarea name="message" placeholder="Special Message" class="box" rows="4"></textarea>
+
+                <button type="submit" name="submit" class="btn-header">Place Order</button>
+            </form>
+        </section>
+
+
+    <hr class="section-divider">
 
         <!-- Review Section -->
         <section id="review" class="review">
@@ -115,6 +129,9 @@
         </div>
     </section>
 
+    <hr class="section-divider">
+
+    
      <!-- About Section -->
      <section id="about" class="about">
         <div class="row">
