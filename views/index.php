@@ -19,12 +19,12 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TH8BTTXG');</script>
+    })(window,document,'script','dataLayer','GTM-M9RHVMQN');</script>
     <!-- End Google Tag Manager -->
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH8BTTXG"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9RHVMQN"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
@@ -108,7 +108,7 @@
        <section class="book" id="book">
             <h1 class="heading">cake <span>Place your Order</span></h1>
 
-            <form action="order.php" method="POST">
+            <form action="order.php" method="POST" id="cakeOrderForm">
                 <input type="text" placeholder="Your Name" name="name" class="box" required>
                 <input type="email" placeholder="Your Email" name="email" class="box" required>
 
@@ -191,9 +191,9 @@
             </div>
             <div class="box">
                 <h3>Contact Info</h3>
-                <a href="tel:+1234567890" id="phoneNumber">+63 917 383 8972</a>
-                <a href="#">ces24pangilinan@gmail.com</a>
-                <a href="#">We are located at Telabastagan Sn. Fernando City, Pampanga</a>
+                <a href="tel:+639173838972" id="phoneNumber">Contact Number: +63 917 383 8972</a>
+                <a href="mailto:ces24pangilinan@gmail.com" id="emailLink">Email: ces24pangilinan@gmail.com</a>
+                <a href="https://maps.app.goo.gl/SSBp8HGP6TqF66YQ7" id="addressClick" target="_blank">Address: Blk 17 Lot 19 Pescara St. Villaggio Real Telabastagan, San Fernando City, Pampanga</a>
             </div>
         </div>
         <p class="credit">© 2024 <span>Cake's with Love</span>. All rights reserved.</p>
@@ -201,3 +201,17 @@
 
 </body>
 </html>
+<script>
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', function () {
+            // Push the navbar event to the Data Layer
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                event: 'navbar',
+                link_text: this.textContent,
+                link_url: this.getAttribute('href')
+            });
+    
+        });
+    });
+</script>
