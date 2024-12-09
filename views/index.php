@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake's with Love</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
@@ -35,7 +35,7 @@
         </div>
 
             <div class="image">
-                <img src="../image/cake-display.png" alt="Delicious Cake">
+                <img src="../assets/image/cake-display.png" alt="Delicious Cake">
             </div>
         </div>
     </section>
@@ -49,7 +49,7 @@
         <h2 class="heading">Our <span>Menu</span></h2>
         <div class="box-container">
             <div class="box">
-                <img src="../image/fresh-fruit-cake.png" alt="fresh-fruit-cake">
+                <img src="../assets/image/fresh-fruit-cake.png" alt="fresh-fruit-cake">
                 <div class="content">
                     <h3>Fresh Fruit Cake</h3>
                     <p>Rich, moist chocolate cake topped with smooth chocolate ganache.</p>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="../image/cupcake.png" alt="cupcake">
+                <img src="../assets/image/cupcake.png" alt="cupcake">
                 <div class="content">
                     <h3>Custom Cupcake</h3>
                     <p>A delightful cupcake that can be personalized with your choice of flavors, frosting, and toppings. Perfect for any celebration!</p>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="../image/burnt-cc.png" alt="Basque Burnt Cheesecake">
+                <img src="../assets/image/burnt-cc.png" alt="Basque Burnt Cheesecake">
                 <div class="content">
                     <h3>Basque Burnt Cheesecake</h3>
                     <p>A rich, creamy cheesecake with a caramelized top, offering a perfect blend of sweet and savory flavors in every bite.</p>
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="../image/custom-cake.png" alt="Custom Cake">
+                <img src="../assets/image/custom-cake.png" alt="Custom Cake">
                 <div class="content">
                     <h3>Custom Cake</h3>
                     <p>A personalized cake crafted to your preferences, perfect for any occasion, with unique designs and flavors tailored just for you.</p>
@@ -115,13 +115,13 @@
         <h2 class="heading">Customer <span>Reviews</span></h2>
         <div class="review-slider">
             <div class="box">
-                <img src="../image/pic-2.png" alt="Customer 1">
+                <img src="../assets/image/pic-2.png" alt="Customer 1">
                 <p>"The best cakes I have ever had! The flavors are so rich and the designs are stunning!"</p>
                 <h3>Maria Smith</h3>
                 <span>⭐⭐⭐⭐⭐</span>
             </div>
             <div class="box">
-                <img src="../image/pic-1.png" alt="Customer 2">
+                <img src="../assets/image/pic-1.png" alt="Customer 2">
                 <p>"Cake Bliss made my birthday unforgettable with their beautiful and delicious cake!"</p>
                 <h3>John Doe</h3>
                 <span>⭐⭐⭐⭐⭐</span>
@@ -136,22 +136,22 @@
      <section id="about" class="about">
         <div class="row">
             <div class="image">
-                <img src="../image/about-us-bg.jpg" alt="About Cake's with Love">
+                <img src="../assets/image/about-us-bg.jpg" alt="About Cake's with Love">
             </div>
             <div class="content">
                 <h3 class="title">About Us</h3>
                 <p>At Cake's with Love, we believe that every celebration deserves a perfect cake. With over a decade of baking experience, we bring artistry and flavor to every creation.</p>
                 <div class="icons-container">
                     <div class="icons">
-                        <img src="../image/quality.png" alt="Quality">
+                        <img src="../assets/image/quality.png" alt="Quality">
                         <h3>Quality Ingredients</h3>
                     </div>
                     <div class="icons">
-                        <img src="../image/customization.png" alt="Customization">
+                        <img src="../assets/image/customization.png" alt="Customization">
                         <h3>Custom Designs</h3>
                     </div>
                     <div class="icons">
-                        <img src="../image/delivery.png" alt="Delivery">
+                        <img src="../assets/image/delivery.png" alt="Delivery">
                         <h3>Timely Delivery</h3>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                 <h3>Contact Info</h3>
                 <a href="#">+63 917 383 8972</a>
                 <a href="#">ces24pangilinan@gmail.com</a>
-                <a href="#">e are located at Telabastagan Sn. Fernando City, Pampanga</a>
+                <a href="#">We are located at Telabastagan Sn. Fernando City, Pampanga</a>
             </div>
         </div>
         <p class="credit">© 2024 <span>Cake's with Love</span>. All rights reserved.</p>
