@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake's with Love</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGYPDYCQ98"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWQJ2RSSRJ"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-RGYPDYCQ98');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-VWQJ2RSSRJ');
     </script>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TH8BTTXG');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH8BTTXG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
     <header class="header">
         <a href="#" class="logo">Cake's with Love by Ces<i class="fas fa-birthday-cake"></i></a>
@@ -180,7 +191,7 @@
             </div>
             <div class="box">
                 <h3>Contact Info</h3>
-                <a href="#">+63 917 383 8972</a>
+                <a href="tel:+1234567890" id="phoneNumber">+63 917 383 8972</a>
                 <a href="#">ces24pangilinan@gmail.com</a>
                 <a href="#">We are located at Telabastagan Sn. Fernando City, Pampanga</a>
             </div>
