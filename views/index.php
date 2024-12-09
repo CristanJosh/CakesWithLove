@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake's with Love</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWQJ2RSSRJ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -193,7 +194,14 @@
                 <h3>Contact Info</h3>
                 <a href="tel:+639173838972" id="phoneNumber">Contact Number: +63 917 383 8972</a>
                 <a href="mailto:ces24pangilinan@gmail.com" id="emailLink">Email: ces24pangilinan@gmail.com</a>
-                <a href="https://maps.app.goo.gl/SSBp8HGP6TqF66YQ7" id="addressClick" target="_blank">Address: Blk 17 Lot 19 Pescara St. Villaggio Real Telabastagan, San Fernando City, Pampanga</a>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/cakeswithlove24" target="_blank" id="facebookLink">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@cakes.with.love.b5" target="_blank" id="tiktokLink">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <p class="credit">© 2024 <span>Cake's with Love</span>. All rights reserved.</p>
