@@ -176,12 +176,12 @@
                 <a href="#menu">Menu</a>
                 <a href="#review">Reviews</a>
                 <a href="#about">About</a>
-                <a href="#book">Contact</a>
+                <a href="#book">Place Order</a>
             </div>
             <div class="box">
                 <h3>Contact Information</h3>
-                <a href="tel:+639173838972" id="phoneNumber">Contact No.: +63 917 383 8972</a>
-                <a href="mailto:ces24pangilinan@gmail.com" id="emailLink">Email: ces24pangilinan@gmail.com</a>
+                <a href="tel:+639173838972" id="phoneNumber"><b>Contact No.:</b> +63 917 383 8972</a>
+                <a href="mailto:ces24pangilinan@gmail.com" id="emailLink"><b>Email:</b> ces24pangilinan@gmail.com</a>
                 <div class="social-links" id="socialLinks">
                     <a href="https://www.facebook.com/cakeswithlove24" target="_blank" id="facebookLink">
                         <i class="fa-brands fa-facebook"></i>
@@ -192,7 +192,7 @@
                 </div>
             </div>
         </div>
-        <p class="credit">© 2024 <span>Cake's with Love</span>. All rights reserved.</p>
+        <p class="credit">© 2024 <b>Cakes with Love by Ces</b>. All rights reserved.</p>
     </footer>
 
 </body>
