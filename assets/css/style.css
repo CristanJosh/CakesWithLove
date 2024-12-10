@@ -16,7 +16,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -34,8 +33,8 @@ section {
 .heading {
     font-size: 9rem;
     text-transform: uppercase;
-    color: #572267;
-    -webkit-text-stroke: .05rem var(--main-color);
+    color: #572627;
+    -webkit-text-stroke: .1rem #fbd5e0;
     letter-spacing: .2rem;
     text-align: center;
     pointer-events: none;
@@ -67,7 +66,6 @@ section {
 .btn:hover {
     border-radius: var(--border-radius-hover);
     border: var(--border-hover);
-    
 }
 
 
@@ -81,17 +79,19 @@ section {
     cursor: pointer;
     margin-top: 1rem;
     font-size: 1.7rem;
-    background-color: #572267;
-    color: #fcd5a0 !important;
+    background-color: #fbd5e0;
+    color: #572627 !important;
     font-weight: bold;
     max-width: 200px;
     text-align: center;
+    border-color: #572627;
 }
 
 .btn-header:hover {
     border-radius: var(--border-radius-hover);
     border: var(--border-hover);
-    background-color: #1d1646;
+    color: #fbd5e0 !important;
+    background-color: #572627;
 }
 
 /* HEADER */
@@ -112,7 +112,7 @@ section {
 }
 
 .header .navbar a {
-    color: #572267 !important; /* Pale Yellow for links */
+    color: #fcd5a0 !important; /* Pale Yellow for links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -122,8 +122,8 @@ section {
 }
 
 .header .logo {
-    color: #572267 !important; /* Light Pink for the logo text */
-    font-weight: bold;
+    color: #fbd5e0 !important; /* Light Pink for the logo text */
+    font-weight: 300;
 }
 
 
@@ -158,8 +158,7 @@ section {
 .home {
     min-height: 100vh; /* Full viewport height */
     padding-top: 12rem; /* Optional padding for layout adjustment */
-    background: url(../image/bg-darkpurple.png) no-repeat center center; /* Background settings */
-    background-size: cover;
+    background: url(../image/pattern.png) repeat; /* Background settings */
     display: flex; /* Enable flexbox */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
@@ -174,7 +173,7 @@ section {
 /* Unique Styled Form - Taller Version */
 .styled-form {
     background:  #e74274; /* Keeps the same background */
-    border: 3px solid #ffffff; /* Maintain the elegant border */
+    border: 3px solid #572627; /* Maintain the elegant border */
     padding: 3rem 3rem; /* Add vertical space with increased padding */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Keep shadow for depth */
     transition: all 0.4s ease-out; /* Smooth transition for hover effects */
@@ -192,12 +191,13 @@ section {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add a stronger shadow */
     border-color: #ffffff; /* Change border color to a softer shade */
     padding: 2.5rem 3.5rem; /* Add extra padding on hover */
+    border-style: dashed;
 }
 
 /* Title Styling */
 .styled-form h3 {
     font-size: 3rem; /* Keep title size bold and noticeable */
-    color: #572267 !important; /* Pale yellow for the title */
+    color: #fcd5a0 !important; /* Pale yellow for the title */
     text-transform: uppercase; /* Dramatic uppercase effect */
     font-weight: bold;
     margin-bottom: 2rem; /* Maintain spacing from other elements */
@@ -290,7 +290,7 @@ section {
     font-size: 2rem; 
     line-height: 1.8;
     padding: 1rem 0;
-    color: #572267;
+    color: #fbd5e0;
 }
 
 
@@ -316,9 +316,8 @@ section {
 .about {
     min-height: 100vh;
     padding-top: 12rem;
-    background: url(../image/bg-darkpurple.png) repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../image/pattern.png) repeat;
+    background-position: 0px 5775px;
 }
 .about .row {
     display: flex;
@@ -354,16 +353,17 @@ section {
 }
 
 .about .row .content .title {
-    color: var(--main-color);
-    font-size: 3rem;
+    font-size: 6rem;
     line-height: 1.8;
+    color: #572627;
 }
 
 .about .row .content p {
-    color: var(--main-color);
-    font-size: 1.5rem;
+    color: #572627;
+    font-size: 2.5rem;
     line-height: 1.8;
     padding: 1rem 0;
+    font-weight: 400;
 }
 
 .about .row .content .icons-container {
@@ -379,6 +379,7 @@ section {
     text-align: center;
     border: var(--border);
     border-radius: var(--border-radius);
+    border-color: #572627;
 }
 
 .about .row .content .icons-container .icons img {
@@ -388,7 +389,7 @@ section {
 .about .row .content .icons-container .icons h3 {
     font-size: 1.7rem;
     padding-top: 1rem;
-    color: var(--main-color);
+    color: #572627;
 }
 .section-divider {
     border: 0;
@@ -404,9 +405,8 @@ section {
 .menu {
     min-height: 100vh;
     padding-top: 12rem;
-    background: url(../image/bg-darkpurple.png) repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../image/pattern.png) repeat;
+    background-position: 0px 29px;
 }
 
 .menu .box-container {
@@ -421,17 +421,20 @@ section {
     padding: 2rem;
     border: var(--border);
     border-radius: var(--border-radius);
+    border-color: #572627;
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-left: 6rem;
     background: #e74274;
     color:#572267 !important;
+    border-width: 3px;
 }
 
 .menu .box-container .box:hover {
     border: var(--border-hover);
     border-radius: var(--border-radius-hover);
+    border-color: #fcd5a0;
 }
 
 .menu .box-container .box img {
@@ -463,25 +466,25 @@ section {
 }
 
 /* Specific styles for headings */
-.menu h2,
+/*.menu h2,*/
 .menu h3 {
-    color: #572267; /* Ensure headings also use the same color */
+    color: #fcd5a0; /* Ensure headings also use the same color */
 }
 
 /* Additional customization for text elements */
 .menu p {
-    color: #572267; /* Apply color to paragraph text */
+    color: #fbd5e0; /* Apply color to paragraph text */
 }
 
 /* Ensure span elements retain the color */
 .menu span {
-    color: #572267;
+    color: #fcd5a0;
 }
 
 /* Optional: Hover effects for links or spans (if any) */
 .menu a:hover,
 .menu span:hover {
-    color: #6b2352; /* Slightly darker purple for hover */
+    color: #572627; /* Slightly darker purple for hover */
 }
 
 
@@ -489,9 +492,8 @@ section {
 .review{
     min-height: 100vh;
     padding-top: 12rem;
-    background: url(../image/bg-darkpurple.png) repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../image/pattern.png) repeat;
+    background-position: 0px 87px;
 }
 
 
@@ -502,6 +504,7 @@ section {
 .review .review-slider .box {
     border: var(--border);
     border-radius: var(--border-radius);
+    border-color: #572627;
     text-align: center;
     position: relative;
     z-index: 0;
@@ -536,8 +539,8 @@ section {
 }
 
 .review .review-slider .box img {
-    height: 7rem;
-    width: 7rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
     margin-bottom: .7rem;
 }
@@ -553,14 +556,14 @@ section {
 
 .review .review-slider .box p {
     font-size: 1.6rem;
-    color: #572267;
+    color: #fbd5e0;
     padding: 1rem 0;
     line-height: 1.8;
 }
 
 .review .review-slider .box h3 {
     font-size: 2.2rem;
-    color: #572267;
+    color: #572627;
     line-height: 1.8;
 }
 
@@ -581,8 +584,8 @@ section {
 
 /* BOOK */
 select.box {
-    background-color: #572267; /* Dark Purple */
-    color: #ffffff; /* White text for contrast */
+    background-color: #fcd5a0; /* Dark Purple */
+    color: #572627; /* White text for contrast */
     padding: 0.8rem;
     border: none;
     border-radius: 5px; /* Rounded corners */
@@ -597,16 +600,15 @@ select.box:focus {
 }
 
 select.box option {
-    background-color: #572267; /* Matches the dropdown background */
-    color: #ffffff; /* White text */
+    background-color: #fcd5a0; /* Matches the dropdown background */
+    color: #572627; /* White text */
 }
 
 .book {
     min-height: 100vh;
     padding-top: 12rem;
-    background:  url(../image/bg-darkpurple.png) repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../image/pattern.png) repeat;
+    background-position: 0px 58px;
 }
 
 .book form {
@@ -637,42 +639,48 @@ select.box option {
     font-size: 1.6rem;
     background: none;
     text-transform: none;
-    color: #572267;
+    color: #fbd5e0;
     border: var(--border);
+    border-color: #572627;
     margin: .7rem 0;
 }
 
 .book form .box:focus {
-    color: #572267;
+    color: #fbd5e0;
 }
 
 .book form textarea {
     height: 15rem;
     resize: none;
 }
+
+::placeholder {
+    color: #fbd5e0;
+}
+
 .footer{
-    background-color: #e74274;
+    background-color: #572627;
 }
 
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     gap: 1.5rem;
-    background-color: #e74274;
-    padding: 1rem;
+    background-color: #572627;
+    padding: 4rem 10rem 0rem 10rem;
 }
 
 .footer .box-container .box h3 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     padding: 1rem 0;
-    color: #572267;
+    color: #e74274;
 }
 
 .footer .box-container .box a {
     display: block;
     font-size: 1.5rem;
     padding: 1rem 0;
-    color: #572267;
+    color: #fcd5a0;
 }
 
 .footer .box-container .box a i {
@@ -688,17 +696,15 @@ select.box option {
     font-size: 2rem;
     padding: 2rem 1rem;
     margin-top: 1rem;
-    color: #572267;
-    background-color: #e74274;
+    color: #fcd5a0;
+    background-color: #572627;
 }
-
-
 
 .box {
     width: 100%;
-    padding: 1rem;
+    padding: 3rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
+    border: 4px dashed #fbd5e0;
     border-radius: 8px;
     font-size: 1rem;
     box-sizing: border-box;

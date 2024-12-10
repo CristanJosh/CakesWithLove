@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cake's with Love</title>
+    <title>Cakes with Love by Ces</title>
+    <link rel="icon" type="image/x-icon" href="../assets/image/about-us-bg.png">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWQJ2RSSRJ"></script>
@@ -30,11 +31,10 @@
     <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
     <header class="header">
-        <a href="#" class="logo">Cake's with Love by Ces<i class="fas fa-birthday-cake"></i></a>
+        <a href="#" class="logo">Cakes with Love by Ces</i></a>
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#menu">Menu</a>
-            <a href="#book">Contact</a>
             <a href="#review">Reviews</a>
             <a href="#about">About</a>
         </nav>
@@ -48,7 +48,7 @@
             <form class="styled-form">
                 <div class="unique-div">
                     <h3 class="title">Delight in Every Bite</h3>
-                    <p>Experience the joy of freshly baked vegan cakes, crafted with love and care. Let us add sweetness to your moments.</p>
+                    <p>Experience the joy of handcrafted, personalized cakes, cupcakes, and brownies, made with love and care. Whether you choose traditional flavors or plant-based creations, each bite reflects our passion for baking and commitment to quality. Let us sweeten your moments, big or small.</p>
                 </div>
                 <a href="#menu" class="btn-header">Explore Menu</a>
             </form>
@@ -60,20 +60,16 @@
         </div>
     </section>
 
-
-
-    <hr class="section-divider">
-
     <!-- Menu Section -->
     <section id="menu" class="menu">
-        <h2 class="heading">Our <span>Menu</span></h2>
+        <h2 class="heading">Menu</h2>
         <div class="box-container">
             <div class="box">
                 <img src="../assets/image/fresh-fruit-cake.png" alt="fresh-fruit-cake">
                 <div class="content">
                     <h3>Fresh Fruit Cake</h3>
                     <p>Rich, moist chocolate cake topped with smooth chocolate ganache.</p>
-                    <span>₱450+</span>
+                    <span>Starts at ₱450.00</span>
                 </div>
             </div>
             <div class="box">
@@ -81,7 +77,7 @@
                 <div class="content">
                     <h3>Custom Cupcake</h3>
                     <p>A delightful cupcake that can be personalized with your choice of flavors, frosting, and toppings. Perfect for any celebration!</p>
-                    <span>₱250+</span>
+                    <span>Starts at ₱250.00</span>
                 </div>
             </div>
             <div class="box">
@@ -89,7 +85,7 @@
                 <div class="content">
                     <h3>Basque Burnt Cheesecake</h3>
                     <p>A rich, creamy cheesecake with a caramelized top, offering a perfect blend of sweet and savory flavors in every bite.</p>
-                    <span>₱600+</span>
+                    <span>Starts at ₱600.00</span>
                 </div>
             </div>
             <div class="box">
@@ -97,70 +93,62 @@
                 <div class="content">
                     <h3>Custom Cake</h3>
                     <p>A personalized cake crafted to your preferences, perfect for any occasion, with unique designs and flavors tailored just for you.</p>
-                    <span>₱500+</span>
+                    <span>Starts at ₱500.00</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <hr class="section-divider">
-
        <!-- BOOK -->
        <section class="book" id="book">
-            <h1 class="heading">cake <span>Place your Order</span></h1>
+            <h1 class="heading">Place Order</h1>
 
             <form action="order.php" method="POST" id="cakeOrderForm">
-                <input type="text" placeholder="Your Name" name="name" class="box" required>
-                <input type="email" placeholder="Your Email" name="email" class="box" required>
+                <input type="text" placeholder="Name" name="name" class="box" required>
+                <input type="email" placeholder="Email" name="email" class="box" required>
 
                 <select name="cake_type" id="cake_type" class="box" required>
-                    <option value="" disabled selected>Flavors</option> <!-- Placeholder -->
+                    <option value="" disabled selected>Pick a flavor...</option> <!-- Placeholder -->
                     <option value="Chocolate">Chocolate</option>
                     <option value="Vanilla">Vanilla</option>
                     <option value="Strawberry">Strawberry</option>
                 </select>
 
                 <input type="number" placeholder="Quantity" name="quantity" class="box" required>
-                <textarea name="message" placeholder="Special Message" class="box" rows="4"></textarea>
+                <textarea name="message" placeholder=" Cake message..." class="box" rows="4"></textarea>
 
-                <button type="submit" name="submit" class="btn-header">Place Order</button>
+                <button type="submit" name="submit" class="btn-header">Submit</button>
             </form>
         </section>
 
-
-    <hr class="section-divider">
-
         <!-- Review Section -->
         <section id="review" class="review">
-        <h2 class="heading">Customer <span>Reviews</span></h2>
+        <h2 class="heading">Customer Reviews</h2>
         <div class="review-slider">
             <div class="box">
                 <img src="../assets/image/pic-2.png" alt="Customer 1">
-                <p>"The best cakes I have ever had! The flavors are so rich and the designs are stunning!"</p>
-                <h3>Maria Smith</h3>
+                <p>"The most delightful cake I've ever had! The flavors were incredible, and the design perfectly captured my vision. Truly made with love!"</p>
+                <h3>Melinda Grace</h3>
                 <span>⭐⭐⭐⭐⭐</span>
             </div>
             <div class="box">
                 <img src="../assets/image/pic-1.png" alt="Customer 2">
-                <p>"Cake Bliss made my birthday unforgettable with their beautiful and delicious cake!"</p>
-                <h3>John Doe</h3>
+                <p>"Cakes with Love by Ces made my birthday extra special! The cake was not only stunning but also delicious, and I loved that there was a vegan option. Highly recommend!"</p>
+                <h3>Jonathan Brookes</h3>
                 <span>⭐⭐⭐⭐⭐</span>
             </div>
         </div>
     </section>
-
-    <hr class="section-divider">
-
     
      <!-- About Section -->
      <section id="about" class="about">
         <div class="row">
             <div class="image">
-                <img src="../assets/image/about-us-bg.jpg" alt="About Cake's with Love">
+                <img src="../assets/image/about-us-bg.png" alt="About Cake's with Love">
             </div>
             <div class="content">
                 <h3 class="title">About Us</h3>
-                <p>At Cake's with Love, we believe that every celebration deserves a perfect cake. With over a decade of baking experience, we bring artistry and flavor to every creation.</p>
+                <p>Cakes with Love began in Telabastagan as a creative pursuit, spreading joy through baking. Founded in 2019, we specialize in custom-made cakes, cupcakes, and brownies for any occasion. Our creations are crafted with artistry, attention to detail, and a dedication to inclusivity, offering both traditional and vegan options. We aim to make every celebration memorable with treats made from the heart, honoring your style and story.</p>
                 <div class="icons-container">
                     <div class="icons">
                         <img src="../assets/image/quality.png" alt="Quality">
