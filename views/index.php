@@ -194,7 +194,7 @@
                 <h3>Contact Info</h3>
                 <a href="tel:+639173838972" id="phoneNumber">Contact Number: +63 917 383 8972</a>
                 <a href="mailto:ces24pangilinan@gmail.com" id="emailLink">Email: ces24pangilinan@gmail.com</a>
-                <div class="social-links">
+                <div class="social-links" id="socialLinks">
                     <a href="https://www.facebook.com/cakeswithlove24" target="_blank" id="facebookLink">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
@@ -221,5 +221,18 @@
             });
     
         });
+    });
+    document.getElementById('cakeOrderForm').addEventListener('submit', function(event) {
+        // Capture the selected cake flavor
+        const selectedFlavor = document.getElementById('cake_type').value;
+
+        // Push the event and selected flavor to the Data Layer
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: 'cake_order_submit',
+            cake_type: selectedFlavor
+        });
+
+        console.log("Data Layer after submit:", dataLayer);
     });
 </script>

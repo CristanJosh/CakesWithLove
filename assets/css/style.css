@@ -806,3 +806,19 @@ select.box option {
         width: 100%;
     }
 }
+/* Flexbox container */
+.social-links {
+    display: flex; /* Use Flexbox for side-by-side layout */
+    gap: 20px; /* Add space between the icons */
+    margin-top: 10px; /* Add some spacing if needed */
+}
+
+/* Increase the size of the icons */
+.social-links a i {
+    font-size: 2rem; /* Adjust the size of the icons */
+}
+
+/* Hover effect */
+.social-links a i:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
