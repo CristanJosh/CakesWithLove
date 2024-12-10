@@ -50,7 +50,7 @@
                     <h3 class="title">Delight in Every Bite</h3>
                     <p>Experience the joy of handcrafted, personalized cakes, cupcakes, and brownies, made with love and care. Whether you choose traditional flavors or plant-based creations, each bite reflects our passion for baking and commitment to quality. Let us sweeten your moments, big or small.</p>
                 </div>
-                <a href="#menu" class="btn-header">Explore Menu</a>
+                <a href="#menu" class="btn-header">Explore the Menu</a>
             </form>
         </div>
 
