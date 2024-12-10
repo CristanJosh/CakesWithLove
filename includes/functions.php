@@ -1,7 +1,7 @@
 <?php
 // Include Composer's autoloader
 require_once '../vendor/autoload.php';  // Adjust this path if necessary
-
+require 'db.php';
 // Use PHPMailer classes
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -13,16 +13,16 @@ function sendOrderNotification($name, $email, $cake_type, $quantity, $message) {
         $mail->SMTPDebug = 0;  // Output detailed debug information for SMTP
         // Set SMTP configuration
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';  // Set SMTP server (for Gmail)
+        $mail->Host = 'smtp.hostinger.com'; 
         $mail->SMTPAuth = true;
-        $mail->Username = '';  // Your Gmail address
-        $mail->Password = '';   // Your Gmail password (use App Password for Gmail)
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // Use TLS encryption
-        $mail->Port = 587;  // Gmail's SMTP port
+        $mail->Username = 'cakeswithlove@cakeswithlove.shop';  
+        $mail->Password = 'Cakeswithlove@123';  
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  
+        $mail->Port = 587;  
         
         // Sender and recipient
-        $mail->setFrom('no-reply@cakeshop.com', 'Cake Shop');
-        $mail->addAddress('');  // Seller's email
+        $mail->setFrom('cakeswithlove@cakeswithlove.shop', 'Cake Shop');
+        $mail->addAddress($email);  // Seller's email
         
         // Email content
         $mail->isHTML(true);

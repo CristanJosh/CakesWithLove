@@ -50,7 +50,6 @@ class PHPMailer
 
     const ENCRYPTION_STARTTLS = 'tls';
     const ENCRYPTION_SMTPS = 'ssl';
-
     const ICAL_METHOD_REQUEST = 'REQUEST';
     const ICAL_METHOD_PUBLISH = 'PUBLISH';
     const ICAL_METHOD_REPLY = 'REPLY';
