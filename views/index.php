@@ -179,8 +179,8 @@
                 <a href="#book">Contact</a>
             </div>
             <div class="box">
-                <h3>Contact Info</h3>
-                <a href="tel:+639173838972" id="phoneNumber">Contact Number: +63 917 383 8972</a>
+                <h3>Contact Information</h3>
+                <a href="tel:+639173838972" id="phoneNumber">Contact No.: +63 917 383 8972</a>
                 <a href="mailto:ces24pangilinan@gmail.com" id="emailLink">Email: ces24pangilinan@gmail.com</a>
                 <div class="social-links" id="socialLinks">
                     <a href="https://www.facebook.com/cakeswithlove24" target="_blank" id="facebookLink">
