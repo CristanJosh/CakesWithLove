@@ -148,7 +148,7 @@
             </div>
             <div class="content">
                 <h2 class="heading">About Us</h2>
-                <p>Cakes with Love began in Telabastagan as a creative pursuit, spreading joy through baking. Founded in 2019, we specialize in custom-made cakes, cupcakes, and brownies for any occasion. Our creations are crafted with artistry, attention to detail, and a dedication to inclusivity, offering both traditional and vegan options. We aim to make every celebration memorable with treats made from the heart, honoring your style and story.</p>
+                <p>Cakes with Love by Ces began in Telabastagan as a creative pursuit, spreading joy through baking. Founded in 2019, we specialize in custom-made cakes, cupcakes, and brownies for any occasion. Our creations are crafted with artistry, attention to detail, and a dedication to inclusivity, offering both traditional and vegan options. We aim to make every celebration memorable with treats made from the heart, honoring your style and story.</p>
                 <div class="icons-container">
                     <div class="icons">
                         <img src="../assets/image/quality.png" alt="Quality">
