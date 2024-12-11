@@ -99,27 +99,35 @@
         </div>
     </section>
 
-       <!-- BOOK -->
-       <section class="book" id="book">
-            <h1 class="heading">Place Order</h1>
+ <!-- BOOK -->
+<section class="book" id="book">
+    <h1 class="heading">Place Order</h1>
 
-            <form action="order.php" method="POST" id="cakeOrderForm">
-                <input type="text" placeholder="Name" name="name" class="box" required>
-                <input type="email" placeholder="Email" name="email" class="box" required>
+    <form action="order.php" method="POST" id="cakeOrderForm">
+        <input type="text" placeholder="Name" name="name" class="box" required>
+        <input type="email" placeholder="Email" name="email" class="box" required>
+        <textarea name="customer_address" placeholder="Address (required for delivery)" class="box" rows="3" id="addressField" required></textarea>
 
-                <select name="cake_type" id="cake_type" class="box" required>
-                    <option value="" disabled selected>Pick a flavor...</option> <!-- Placeholder -->
-                    <option value="Chocolate">Chocolate</option>
-                    <option value="Vanilla">Vanilla</option>
-                    <option value="Strawberry">Strawberry</option>
-                </select>
+        <select name="cake_type" id="cake_type" class="box" required>
+            <option value="" disabled selected>Pick a flavor...</option> <!-- Placeholder -->
+            <option value="Chocolate">Chocolate</option>
+            <option value="Vanilla">Vanilla</option>
+            <option value="Strawberry">Strawberry</option>
+        </select>
 
-                <input type="number" placeholder="Quantity" name="quantity" class="box" required>
-                <textarea name="message" placeholder=" Cake message..." class="box" rows="4"></textarea>
+        <input type="number" placeholder="Quantity" name="quantity" class="box" required>
+        <textarea name="message" placeholder=" Cake message..." class="box" rows="4"></textarea>
 
-                <button type="submit" name="submit" class="btn-header">Submit</button>
-            </form>
-        </section>
+        <!-- New Field: Order Type -->
+        <select name="order_type" id="order_type" class="box" required>
+            <option value="" disabled selected>Pick Order Type...</option> <!-- Placeholder -->
+            <option value="Pick-Up">Pick-Up</option>
+            <option value="Delivery">Delivery</option>
+        </select>
+
+        <button type="submit" name="submit" class="btn-header">Submit</button>
+    </form>
+</section>
 
         <!-- Review Section -->
         <section id="review" class="review">

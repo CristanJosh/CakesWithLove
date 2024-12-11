@@ -7,13 +7,17 @@ if (isset($_POST['submit'])) {
     $cake_type = $_POST['cake_type'];
     $quantity = $_POST['quantity'];
     $message = $_POST['message'];
+    $order_type = $_POST['order_type'];
+
+    // Handle customer address based on order type
+    $customer_address = ($order_type === 'Delivery') ? $_POST['customer_address'] : 'N/A';
 
     // Save the order in the database
     try {
-        saveOrder($name, $email, $cake_type, $quantity, $message);
+        saveOrder($name, $email, $cake_type, $quantity, $message, $order_type, $customer_address);
 
         // Send the email notification
-        sendOrderNotification($name, $email, $cake_type, $quantity, $message);
+        sendOrderNotification($name, $email, $cake_type, $quantity, $message, $order_type, $customer_address);
 
         echo "
         <link rel='stylesheet' href='../assets/css/style.css'>
@@ -27,7 +31,7 @@ if (isset($_POST['submit'])) {
     } catch (Exception $e) {
         echo "
         <link rel='stylesheet' href='../assets/css/style.css'>
-            <div style='display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; background: url(\"../assets/image/bg-darkpurple.png\") no-repeat center center fixed; background-size: cover;'>
+            <div style='display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; background: url(\"../assets/image/bg-darkpurple.png\") no-repeat center center fixed; background-size: cover;' >
                 <div style='max-width: 600px; width: 90%; padding: 30px; border: 5px solid #572267; border-radius: 10px; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;'>
                     <h1 style='color: #f44336; margin-bottom: 20px;'>Failed to place the order.</h1>
                     <p style='color: #333; margin-bottom: 20px;'>Error: {$e->getMessage()}</p>
