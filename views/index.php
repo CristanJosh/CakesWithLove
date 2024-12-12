@@ -55,7 +55,7 @@
         </div>
 
             <div class="image">
-                <img src="../assets/image/cake-display.png" alt="Delicious Cake">
+                <img src="../assets/image/burnt-cc.png" alt="Delicious Cake">
             </div>
         </div>
     </section>
@@ -64,38 +64,61 @@
     <section id="menu" class="menu">
         <h2 class="heading">Menu</h2>
         <div class="box-container">
-            <div class="box">
-                <img src="../assets/image/fresh-fruit-cake.png" alt="fresh-fruit-cake">
-                <div class="content">
-                    <h3>Fresh Fruit Cake</h3>
-                    <p>Rich, moist chocolate cake topped with smooth chocolate ganache.</p>
-                    <span>Starts at ₱450.00</span>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../assets/image/cupcake.png" alt="cupcake">
-                <div class="content">
-                    <h3>Custom Cupcake</h3>
-                    <p>A delightful cupcake that can be personalized with your choice of flavors, frosting, and toppings. Perfect for any celebration!</p>
-                    <span>Starts at ₱250.00</span>
-                </div>
-            </div>
+            
             <div class="box">
                 <img src="../assets/image/burnt-cc.png" alt="Basque Burnt Cheesecake">
                 <div class="content">
                     <h3>Basque Burnt Cheesecake</h3>
-                    <p>A rich, creamy cheesecake with a caramelized top, offering a perfect blend of sweet and savory flavors in every bite.</p>
-                    <span>Starts at ₱600.00</span>
+                    <p>Delight in our Basque Burnt Cheesecake – a creamy, caramelized masterpiece with a perfectly charred top and a luscious, melt-in-your-mouth center!</p>
+                    <span>₱650.00</span>
                 </div>
             </div>
+
             <div class="box">
-                <img src="../assets/image/custom-cake.png" alt="Custom Cake">
+                <img src="../assets/image/minecraft_carrot_cake.png" alt="Minecraft Carrot Cake">
                 <div class="content">
-                    <h3>Custom Cake</h3>
-                    <p>A personalized cake crafted to your preferences, perfect for any occasion, with unique designs and flavors tailored just for you.</p>
-                    <span>Starts at ₱500.00</span>
+                    <h3>Minecraft Carrot Cake</h3>
+                    <p>Dig into our Minecraft Carrot Cake – a moist, spiced carrot cake topped with cream cheese frosting, inspired by your favorite blocky adventure!</p>
+                    <span>₱1,250.00</span>
                 </div>
             </div>
+
+            <div class="box">
+                <img src="../assets/image/fresh-fruit-cake.png" alt="Mixed Berries Bento Cake">
+                <div class="content">
+                    <h3>Mixed Berries Bento Cake</h3>
+                    <p>Enjoy our Mixed Berries Bento Cake – a delightful blend of soft, fluffy cake topped with fresh, juicy berries for the perfect sweet and tangy treat!</p>
+                    <span>₱450.00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../assets/image/orange_cupcake.png" alt="Orange Cupcake">
+                <div class="content">
+                    <h3>Orange Cupcake</h3>
+                    <p>Brighten your day with our Orange Cupcake – a zesty, fluffy treat topped with a citrusy glaze for a burst of refreshing flavor!</p>
+                    <span>₱600.00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../assets/image/pineapple_kiwi_fruit_cake.png" alt="Pineapple Kiwi Fruit Cake">
+                <div class="content">
+                    <h3>Pineapple Kiwi Fruit Cake</h3>
+                    <p>Savor our Pineapple Kiwi Fruit Cake – a tropical delight with layers of moist cake, fresh pineapple, and kiwi slices for a fruity indulgence!</p>
+                    <span>₱1,300.00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../assets/image/vegan_oreo_bento_cake.png" alt="Vegan Oreo Bento Cake">
+                <div class="content">
+                    <h3>Vegan Oreo Bento Cake</h3>
+                    <p>Indulge in our Vegan Oreo Bento Cake – a rich, plant-based treat layered with creamy goodness and Oreo crunch, perfect for any occasion!</p>
+                    <span>₱450.00</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -109,10 +132,13 @@
         <textarea name="customer_address" placeholder="Address (required for delivery)" class="box" rows="3" id="addressField" required></textarea>
 
         <select name="cake_type" id="cake_type" class="box" required>
-            <option value="" disabled selected>Pick a flavor...</option> <!-- Placeholder -->
-            <option value="Chocolate">Chocolate</option>
-            <option value="Vanilla">Vanilla</option>
-            <option value="Strawberry">Strawberry</option>
+            <option value="" disabled selected>Choose Your Cake...</option> <!-- Placeholder -->
+            <option value="Basque Burnt Cheesecake">Basque Burnt Cheesecake</option>
+            <option value="Minecraft Carrot Cake">Minecraft Carrot Cake</option>
+            <option value="Mixed Berries Bento Cake">Mixed Berries Bento Cake</option>
+            <option value="Orange Cupcake">Orange Cupcake</option>
+            <option value="Pineapple Kiwi Fruit Cake">Pineapple Kiwi Fruit Cake</option>
+            <option value="Vegan Oreo Bento Cake">Vegan Oreo Bento Cake</option>
         </select>
 
         <input type="number" placeholder="Quantity" name="quantity" class="box" required>
@@ -134,15 +160,21 @@
         <h2 class="heading">Customer Reviews</h2>
         <div class="review-slider">
             <div class="box">
-                <img src="../assets/image/pic-2.png" alt="Customer 1">
-                <p>"The most delightful cake I've ever had! The flavors were incredible, and the design perfectly captured my vision. Truly made with love!"</p>
-                <h3>Melinda Grace</h3>
+                <img src="../assets/image/catherine.jpg" alt="Customer 1">
+                <p>"Yummy! Highly recommended! Tasty Cupcakes!"</p>
+                <h3>Mejoranda Catherine</h3>
                 <span>⭐⭐⭐⭐⭐</span>
             </div>
             <div class="box">
-                <img src="../assets/image/pic-1.png" alt="Customer 2">
-                <p>"Cakes with Love by Ces made my birthday extra special! The cake was not only stunning but also delicious, and I loved that there was a vegan option. Highly recommend!"</p>
-                <h3>Jonathan Brookes</h3>
+                <img src="../assets/image/carlow.jpg" alt="Customer 2">
+                <p>"Eat all that cake thing without the guilt!"</p>
+                <h3>Carlow Roque</h3>
+                <span>⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="box">
+                <img src="../assets/image/cristan.jpg" alt="Customer 1">
+                <p>"So good! The cupcakes are very tasty and perfectly moist, with just the right balance of sweetness. Each bite is a delightful treat!"</p>
+                <h3>Cristan Josh Nuguid</h3>
                 <span>⭐⭐⭐⭐⭐</span>
             </div>
         </div>
